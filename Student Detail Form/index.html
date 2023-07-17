@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/script.css">
+    <title>Task-3</title>
+</head>
+
+<body>
+    <header>
+        <!-- <nav> -->
+        Student Enrollment Form
+        <!-- </nav> -->
+    </header>
+
+
+    <div class="container">
+        <form>
+            <div>
+                <input class="inputs" type="text" name="name" value="" required id="name" placeholder="Enter student name">
+            </div>
+            <div>
+                <input class="inputs" type="email" name="email" value="" required id="email" placeholder="Enter an email">
+            </div>
+            <div>
+                <input class="inputs" type="text" name="website" value="" required id="website" placeholder="Enter student website">
+            </div>
+            <div>
+                <input class="inputs" type="url" name="imgLink" value="" required id="imgLink" placeholder="Enter image link">
+            </div>
+
+            <!-- Radio -->
+            <div class="radio">
+                <input type="radio" id="male" name="gender" value="Male" >
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="Female" >
+                <label for="female">Female</label><br>
+            </div>
+
+            <!-- checkbox -->
+            <div class="checkbox">
+                <input type="checkbox" id="HTML" name="skills" value="HTML">
+                <label for="HTML">HTML</label><br>
+                <input type="checkbox" id="CSS" name="skills" value="CSS">
+                <label for="CSS">CSS</label><br>
+                <input type="checkbox" id="JavaScript" name="skills" value="JavaScript">
+                <label for="JavaScript">JavaScript</label><br><br>
+
+            </div>
+
+            <!-- buttons -->
+            <div>
+                <button onclick="addStudent()" class="submitBTN">Enroll Student</button>
+                <!-- <input type="submit" value="Enroll Student" class="submitBTN"> -->
+                <input type="reset" value="Clear" class="resetBTN">
+            </div>
+        </form>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <h2 style="text-align: center; color: rgb(20, 19, 19); margin-top: 30px; margin-bottom: 30px;">Enrolled Students List</h2>
+    <p id="studentDisplay">No student enrolled</p>
+    <div id="users">
+    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+

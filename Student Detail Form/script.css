@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    background: #d3c7c7;
+}
+
+header {
+    padding: 30px;
+    font-size: large;
+    background: #1a1919;
+    color: antiquewhite;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* background: #998c8c; */
+}
+
+form {
+    padding: 40px 50px;
+    background: #c74343;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: antiquewhite;
+    font-size: medium;
+    border-radius: 10px;
+
+}
+
+form div {
+    margin: 5px;
+}
+
+.inputs {
+    border: 0;
+    outline: none;
+    border-radius: 8px;
+    width: 20vw;
+    padding: 10px;
+    background: #f1eeee;
+    color: rgb(5, 5, 5);
+}
+
+.submitBTN {
+    border: 0;
+    outline: none;
+    border-radius: 8px;
+    padding: 8px;
+    margin-right: 4px;
+    background: #222020;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.submitBTN:hover {
+    background: #998c8c;
+
+}
+
+.resetBTN {
+    border: 0;
+    outline: none;
+    border-radius: 8px;
+    padding: 8px;
+    background: #222020;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.resetBTN:hover {
+    background: #998c8c;
+
+}
+
+#studentDisplay{
+    text-align: center;
+}
+
+/* display profiles */
+#users {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    margin-right: 60px;
+    padding: 15px;
+    border:none;
+    outline: none;
+    border-radius: 10px;
+    background: #241e0c;
+    color: antiquewhite;
+}
+
+/* .detailsInfo{
+    border: 1px solid black;
+    
+} */
+.profileImg {
+    max-width: 100px;
+    display: flex;
+    align-items: center;
+    /* border: 5px solid black; */
+    /* background: #000; */
+}
+
+#users .details div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+    margin: 3px 0px;
+}
+
+.websiteText{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.Img {
+    max-width: 100px;
+}
